@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/* *********************************
+	developed by http://neteasyinc.com
+	copyright: Net Easy, Inc.
+
+********************************	*/
+
+body {
+	margin:0px;
+	padding:0px;
+	color:#323232;		
+	font-family:Tahoma, Geneva, Arial, Helvetica, sans-serif;
+	font-size:0.8em;
+	background-color:#efefef; /* #ccc;   #c4c4c4; */
+	/* background-image:url(../img/bckgrnd.png);	
+	background: url(../img/login-page-bg.jpg) top center no-repeat #c4c4c4; 	*/
+}
+
+td,th {		}
+
+a {
+	text-decoration:none;
+}
+a:hover 	{
+	text-decoration:underline;
+	}
+a:visited 	{ 	
+	text-decoration:none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+/*	color:	#004B83; 			*/
+	font-weight: normal;
+}
+
+img   { border:none;	}
+
+
+form {  }
+
+legend { /* display: none; */ }
+
+fieldset { /* border: 0;*/ }
+
+label { /* width: 115px; text-align: right; float: left; margin: 0 10px 0 0; padding: 9px 0 0 0; font-size: 16px;*/ }
+
+input { 
+/* 	width: 220px; 
+	display: block; 
+	padding: 4px; margin: 0 0 10px 0; font-size: 18px;
+					  color: #3a3a3a; font-family: Georgia, serif; */
+}
+					  
+input[type=checkbox]{ /* width: 20px; margin: 0; display: inline-block; */ }
+
+
+
+
+#neteasy-registration-page-wrapper {
+	margin:0px auto;
+	width:500px;
+	clear: both;
+
+}
+
+
+
+
+
+
+/* *********************************************  */
+/* 		USER LOGIN FORM PAGE   users/userlogin.ogo		*/
+#user-interface-login {
+	margin:150px auto 0 auto;
+	width:430px;
+}
+#user-interface-login-form {  }
+
+#userLoginSubmitButton { 
+	background: url(../img/button-bg.png) repeat-x top center; 
+	border: 1px solid #999;
+	-moz-border-radius: 5px; 
+	padding: 5px; 
+	color: black; 
+	font-weight: bold;
+	-webkit-border-radius: 5px; 
+	font-size: 13px;  
+	width: 70px; 
+}
+#userLoginResetButton { 
+	background: url(../img/button-bg.png) repeat-x top center; 
+	border: 1px solid #999;
+	-moz-border-radius: 5px; 
+	padding: 5px; 
+	color: black; 
+	font-weight: bold;
+	-webkit-border-radius: 5px; 
+	font-size: 13px;  
+	width: 70px; 
+}					  
+					  
+#userLoginSubmitButton:hover { background: white; color: black; }
+
+#userLoginResetButton {	background: white; color: black;  }
+
+
+
+
+
+
+/* *********************************************  */
+/* 	account recover html file and the recover script files */
+
+
+#neteasy-registration-page-wrapper #registration-account-recovery-form { 
+	margin:0 auto; 
+	padding:10px;
+}
+#neteasy-registration-page-wrapper #registration-account-recovery-form form #registration-account-user-id-label {
+	float: left;
+	width: 100px;
+	text-align: right;
+}
+#neteasy-registration-page-wrapper #registration-account-recovery-form form #registration-account-user-email-label {
+	float: left;
+	width: 100px;
+	text-align: right;
+}
+
+
+
+
+/* *********************************************  */
+/* Custom classes */
+
+/*	USER REGISTRATION FORM PAGE 		*/
+.required-data-element { color:#f00; }
+.required-input-data { color:#f00; 	}
+
+.RedColorText { color:#f00; }
+
+.clear { clear: both; }
+
+.small-text { font-size:.8em; 	}
+
+
+
+
+#neteasy-event-registration {
+	margin:0 auto;
+	width: 550px;
+	clear: both;	
+}
