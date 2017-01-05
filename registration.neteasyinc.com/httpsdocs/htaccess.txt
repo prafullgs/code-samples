@@ -1,0 +1,16 @@
+Options -Indexes
+RewriteEngine On
+ReWriteRule ^(/)?$ /users/index.php [L]
+ReWriteRule ^(admin/main)?$ admin/main.php [L]
+ReWriteRule ^admin/status_report/([^/]+)/([^/]+) /admin/status_report.php?gen=$1&site_id=$2 [L]
+ReWriteRule ^admin/status_report/([^/]+)/([^/]+) /admin/status_report.php?site_id=$1&e_id=$2 [L]
+ReWriteRule ^(admin/showusers)?$ admin/showusers.php [L]
+ReWriteRule ^(admin/list)?$ admin/list.php [L]
+ReWriteRule ^([^/]+).js /js/$1.js [L]
+ReWriteRule ^eventreg/([^/]+) /users/eventreg.php?msg=$1 [L]
+ReWriteRule ^virginiaplanning/([^/]+) /users/virginiaplanning.php?msg=$1 [L]
+ReWriteRule ^registeredevent/([^/]+)/([^/]+) /users/registeredevent.php?q=$1&sid=$2 [L]
+ReWriteRule ^geteventdetails/([^/]+)/([^/]+) /users/geteventdetails.php?q=$1&sid=$2 [L]
+ReWriteRule ^getuserroles/([^/]+)/([^/]+) /users/getuserroles.php?q=$1&sid=$2 [L]
+ReWriteRule ^recover_login/([^/]+) /users/recover_login.php?msg=$1 [L]
+ReWriteRule ^([^/]+)?(/)?$ /users/$1.php [L]
