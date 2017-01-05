@@ -1,7 +1,5 @@
 # code-samples
 Code samples
-Hello People!
-PHP code samples
-<?php
-echo 'Code Samples!!!';
-?>
+Please refer to the projects
+1. Bulletin Board
+2. Event registration 
