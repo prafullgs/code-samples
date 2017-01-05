@@ -1,0 +1,191 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Oct 16, 2008 at 10:55 PM
+-- Server version: 5.0.45
+-- PHP Version: 5.2.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Database: `moviesbb`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `blog`
+-- 
+
+CREATE TABLE `blog` (
+  `pid` tinyint(5) NOT NULL auto_increment,
+  `uid` tinyint(3) NOT NULL default '0',
+  `title` varchar(225) NOT NULL default '',
+  `content` text NOT NULL,
+  `image` int(11) NOT NULL default '0',
+  `float` varchar(30) NOT NULL default '',
+  `date_time` varchar(30) NOT NULL default '0000-00-00 00:00:00',
+  `month_date` varchar(30) NOT NULL default '',
+  `edit_uid` int(11) NOT NULL default '0',
+  `edit_date` datetime NOT NULL default '0000-00-00 00:00:00',
+  PRIMARY KEY  (`pid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+-- 
+-- Dumping data for table `blog`
+-- 
+
+INSERT INTO `blog` (`pid`, `uid`, `title`, `content`, `image`, `float`, `date_time`, `month_date`, `edit_uid`, `edit_date`) VALUES 
+(1, 1, 'xjfskmfzxczxcmzcx mzc mzlkcm', 'zxc zxkczc\r\nzc\r\nzxczjxcnzxc\r\nzc\r\nzczxczclsnfclznczzxczcmz\r\nczjczczczczkczxc\r\nzxcmzlcmz\r\nxzzxclmz', 1, 'right', '2008-10-15 20:39:09', 'October 2008', 0, '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `comments`
+-- 
+
+CREATE TABLE `comments` (
+  `cid` int(11) NOT NULL auto_increment,
+  `uid` int(11) NOT NULL default '0',
+  `comment` text NOT NULL,
+  `date_time` datetime NOT NULL default '0000-00-00 00:00:00',
+  `pid` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`cid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- 
+-- Dumping data for table `comments`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `images`
+-- 
+
+CREATE TABLE `images` (
+  `gid` int(11) NOT NULL auto_increment,
+  `filename` varchar(30) NOT NULL default '',
+  `alt` varchar(30) NOT NULL default '',
+  PRIMARY KEY  (`gid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 PACK_KEYS=0 AUTO_INCREMENT=4 ;
+
+-- 
+-- Dumping data for table `images`
+-- 
+
+INSERT INTO `images` (`gid`, `filename`, `alt`) VALUES 
+(1, 'webspot.jpg', 'Webspot.co.uk'),
+(2, 'stickists.gif', 'Stickists.co.uk'),
+(3, 'filmspot.gif', 'Filmspot.co.uk');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `newsletter_drafts`
+-- 
+
+CREATE TABLE `newsletter_drafts` (
+  `did` int(11) NOT NULL auto_increment,
+  `subject` varchar(255) NOT NULL default '',
+  `content` text NOT NULL,
+  `uid` int(11) NOT NULL default '0',
+  `date_time` datetime NOT NULL default '0000-00-00 00:00:00',
+  PRIMARY KEY  (`did`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- 
+-- Dumping data for table `newsletter_drafts`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `theme`
+-- 
+
+CREATE TABLE `theme` (
+  `tid` int(11) NOT NULL auto_increment,
+  `name` varchar(30) NOT NULL default '',
+  `using_now` tinyint(1) NOT NULL default '0',
+  `main-content_width` varchar(5) NOT NULL default '',
+  `logo_src` varchar(255) NOT NULL default '',
+  `headerbox_border` varchar(255) NOT NULL default '',
+  `headerbox_background-color` varchar(255) NOT NULL default '',
+  `headerbox_font-size` varchar(255) NOT NULL default '',
+  `logo_border` varchar(255) NOT NULL default '',
+  `maindate_color` varchar(255) NOT NULL default '',
+  `pagetitle_font-size` varchar(255) NOT NULL default '',
+  `pagetitle_font-weight` varchar(255) NOT NULL default '',
+  `pagetitle_color` varchar(255) NOT NULL default '',
+  `navbar_border` varchar(255) NOT NULL default '',
+  `navbar_background-color` varchar(255) NOT NULL default '',
+  `navbar_font-size` varchar(255) NOT NULL default '',
+  `navbar_text-align` varchar(255) NOT NULL default '',
+  `postbox_border` varchar(255) NOT NULL default '',
+  `postheader_background-color` varchar(255) NOT NULL default '',
+  `postheader_color` varchar(255) NOT NULL default '',
+  `postheader_font-size` varchar(255) NOT NULL default '',
+  `postheader_font-weight` varchar(255) NOT NULL default '',
+  `postheader_text-align` varchar(255) NOT NULL default '',
+  `postcontent_background-color` varchar(255) NOT NULL default '',
+  `postcontent_border-top` varchar(255) NOT NULL default '',
+  `postcontent_font-size` varchar(255) NOT NULL default '',
+  `postinfo_color` varchar(255) NOT NULL default '',
+  `postinfo_font-size` varchar(255) NOT NULL default '',
+  `postinfo_text-align` varchar(255) NOT NULL default '',
+  `postinfo_font-weight` varchar(255) NOT NULL default '',
+  `postinfo_float` varchar(255) NOT NULL default '',
+  `sidebox_border` varchar(255) NOT NULL default '',
+  `sideboxheader_background-color` varchar(255) NOT NULL default '',
+  `sideboxheader_color` varchar(255) NOT NULL default '',
+  `sideboxheader_font-size` varchar(255) NOT NULL default '',
+  `sideboxheader_font-weight` varchar(255) NOT NULL default '',
+  `sideboxheader_text-align` varchar(255) NOT NULL default '',
+  `sideboxcontent_background-color` varchar(255) NOT NULL default '',
+  `sideboxcontent_border-top` varchar(255) NOT NULL default '',
+  `sideboxcontent_font-size` varchar(255) NOT NULL default '',
+  `body_background-color` varchar(255) NOT NULL default '',
+  `body_font-family` varchar(255) NOT NULL default '',
+  `body_font-size` varchar(255) NOT NULL default '',
+  `a_text-decoration` varchar(255) NOT NULL default '',
+  `a_color` varchar(255) NOT NULL default '',
+  `a:hover_text-decoration` varchar(255) NOT NULL default '',
+  `a:hover_color` varchar(255) NOT NULL default '',
+  PRIMARY KEY  (`tid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+-- 
+-- Dumping data for table `theme`
+-- 
+
+INSERT INTO `theme` (`tid`, `name`, `using_now`, `main-content_width`, `logo_src`, `headerbox_border`, `headerbox_background-color`, `headerbox_font-size`, `logo_border`, `maindate_color`, `pagetitle_font-size`, `pagetitle_font-weight`, `pagetitle_color`, `navbar_border`, `navbar_background-color`, `navbar_font-size`, `navbar_text-align`, `postbox_border`, `postheader_background-color`, `postheader_color`, `postheader_font-size`, `postheader_font-weight`, `postheader_text-align`, `postcontent_background-color`, `postcontent_border-top`, `postcontent_font-size`, `postinfo_color`, `postinfo_font-size`, `postinfo_text-align`, `postinfo_font-weight`, `postinfo_float`, `sidebox_border`, `sideboxheader_background-color`, `sideboxheader_color`, `sideboxheader_font-size`, `sideboxheader_font-weight`, `sideboxheader_text-align`, `sideboxcontent_background-color`, `sideboxcontent_border-top`, `sideboxcontent_font-size`, `body_background-color`, `body_font-family`, `body_font-size`, `a_text-decoration`, `a_color`, `a:hover_text-decoration`, `a:hover_color`) VALUES 
+(1, 'Default', 1, '98%', 'styles/default.gif', '2px solid #0099CC', '#FFFFFF', '12px', '0px', '#006699', '14px', 'lighter', '#00486a', '2px solid #0099CC', '#FFFFFF', '12px', 'right', '2px solid #0099CC', '#08c7FF', '#003366', '12px', 'bold', 'center', '#FFFFFF', '2px solid #0099CC', '12px', '#00c4fd', '9px', 'right', 'bold', 'right', '2px solid #0099CC', '#08c7ff', '#003366', '14px', 'bold', 'right', '#FFFFFF', '2px solid #0099CC', '11.5px', '#8ce2ff', 'Arial', '8pt', 'none', '#00a5d5', 'underline', '#00a5d5');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `users`
+-- 
+
+CREATE TABLE `users` (
+  `uid` tinyint(3) NOT NULL auto_increment,
+  `username` varchar(30) NOT NULL default '',
+  `password` varchar(255) NOT NULL default '',
+  `admin` tinyint(1) NOT NULL default '0',
+  `mod` tinyint(1) NOT NULL default '0',
+  `email` varchar(255) NOT NULL default '',
+  `newsletter` int(1) NOT NULL default '0',
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+-- 
+-- Dumping data for table `users`
+-- 
+
+INSERT INTO `users` (`uid`, `username`, `password`, `admin`, `mod`, `email`, `newsletter`) VALUES 
+(1, 'root', '63a9f0ea7bb98050796b649e85481845', 1, 1, 'pshirodk@cs.odu.edu', 1);
