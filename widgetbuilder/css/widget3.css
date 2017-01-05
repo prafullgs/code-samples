@@ -1,0 +1,95 @@
+body{
+	background: #FFF;
+}
+#wrapper{
+	position: relative;
+}
+ul{
+  left: -123px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: -40px;
+  width: 518px;
+}
+li{
+  display: inline-block;
+	*display:inline;
+  margin-bottom: 5px;
+	zoom: 1;
+}
+li a{
+	background: url("../images/button-bg.png") repeat-x scroll 0 0 transparent;
+	color: #FFFFFF;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 7px 9px 7px 10px;
+	text-decoration: none;
+}
+li a:hover{
+	text-decoration: underline;
+}
+#container{
+	border: 1px solid #dcd7d7;
+	padding: 10px;
+}
+.title h1{
+	color: #000;
+	font-size: 12px;
+	margin-bottom: 9px;
+}
+.subtitle h2{
+	color: #1a5b9b;
+	font-size: 18px;
+	margin-bottom: 12px;
+}
+.content{
+  background: url("../images/calendar-pin.png") no-repeat scroll center top transparent;
+  height: 155px;
+  margin: 0 auto 20px;
+  position: relative;
+  width: 131px;
+}
+.content-inner{
+	height: 72px;
+	position: absolute;
+	right: 2px;
+	text-align: center;
+	top: 39px;
+	width: 126px;
+}
+.widget-value{
+	display: block;
+	font-size: 46px;
+	font-weight: 600;
+}
+.widget-label{
+	clear: both;
+	color: #534949;
+	font-size: 20px;
+	font-weight: 600;
+}
+.widget-target{
+  position: absolute;
+  right: -40px;
+  top: 140px;
+  width: 220px;
+}
+.link a{
+	color: #000000;
+	background-color: #cccccc;
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+	margin: 0 auto 5px;
+	padding: 11px 5px;
+	text-decoration: none;
+	width: 220px;
+}
+.link a:hover{
+	text-decoration: underline;
+}
+.see-more-data a{
+	color: #1a5b9b;
+	font-size: 12px;
+}

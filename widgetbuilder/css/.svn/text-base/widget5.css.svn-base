@@ -1,0 +1,129 @@
+body{
+	background: #FFF;
+}
+#wrapper{
+	position: relative;
+}
+ul{
+  left: -123px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: -40px;
+  width: 518px;
+}
+li{
+  display: inline-block;
+	*display:inline;
+  margin-bottom: 5px;
+	zoom: 1;
+}
+li a{
+	background: url("../images/button-bg.png") repeat-x scroll 0 0 transparent;
+	color: #FFFFFF;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 7px 9px 7px 10px;
+	text-decoration: none;
+}
+li a:hover{
+	text-decoration: underline;
+}
+#container{
+	border: 1px solid #dcd7d7;
+	padding: 10px;
+}
+.title h1{
+	color: #000;
+	font-size: 12px;
+	margin-bottom: 9px;
+}
+.subtitle h2{
+	color: #1a5b9b;
+	font-size: 18px;
+	margin-bottom: 12px;
+}
+.content{
+	font-size: 12px;
+	margin-bottom: 7px;
+	position: relative;
+}
+.chart{
+	background: url("../images/chart-bg3.png") repeat scroll center top transparent;
+	height: 122px;
+	margin-bottom: 9px;
+	position: relative;
+}
+.chart .channel-one{
+	left: 24%;
+}
+.chart .channel-two{
+	left: 59%;
+}
+.channel-column-one{
+	background: url("../images/column-one-bg.png") repeat;
+}
+.channel-column-two{
+	background: url("../images/column-two-bg.png") repeat;
+}
+.channel{
+	bottom: 0;
+	position: absolute;
+	width: 50px;
+}
+.channel .channel-value{
+  display: inline-block;
+	*display:inline;
+  font-weight: 600;
+  margin-bottom: 2px;
+	zoom: 1;
+}
+.channel .channel-column{
+	display: block;
+	margin: 0px auto;
+	max-height: 90px;
+	width: 47px;
+}
+.channel .channel-label{
+	display: block;
+	margin-top: 5px;
+}
+.target{
+	height: 49px;
+	padding-top: 5px;
+}
+.target .title{
+	display: block;
+  font-weight: 600;
+}
+.target-channel{
+	display: inline-block;
+	*display:inline;
+	margin: 7px 10px 5px;
+	zoom: 1;
+}
+.target-channel-label{
+	color: #1a5b9b;
+	display: block;
+}
+.target-channel-value{
+	display: block;
+}
+.link a{
+	color: #000000;
+	background-color: #cccccc;
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+	margin: 0 auto 5px;
+	padding: 11px 5px;
+	text-decoration: none;
+	width: 220px;
+}
+.link a:hover{
+	text-decoration: underline;
+}
+.see-more-data a{
+	color: #1a5b9b;
+	font-size: 12px;
+}

@@ -1,0 +1,42 @@
+#submit-buttons{
+	width: 321px;
+}
+#submit-buttons input{
+	font-size:12px;
+	padding: 0px;
+	width: 100px;
+}
+.ui-slider{
+  display: none;
+}
+textarea{
+	width: 315px;
+}
+#edit-actual-value-wrapper,
+#edit-target-value-wrapper,
+#edit-value-units-wrapper,
+#edit-width-wrapper{
+	width: 110px;
+}
+#edit-target-value-wrapper input,
+input#wwidth{
+	width: 104px;
+}
+.edit-channel-type-wrapper input,
+.edit-channel-value-wrapper input,
+.edit-channel-unit-wrapper input,
+.edit-target-type-wrapper input,
+.edit-target-value-wrapper input,
+.edit-target-unit-wrapper input,
+.edit-measure-type-wrapper input,
+.edit-measure-value-wrapper input,
+.edit-measure-unit-wrapper input{
+	width: 58px;
+}
+.channel div,
+.target div,
+.measure div{
+	display:inline;
+	width: 62px;
+	zoom: 1;
+}
